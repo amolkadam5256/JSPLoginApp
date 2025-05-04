@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0"
+         id="WebApp_ID">
+
+    <!-- Application Display Name -->
+    <display-name>JSPLoginApp</display-name>
+
+    <!-- Welcome File Configuration -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>   <!-- HTML welcome page -->
+        <welcome-file>index.jsp</welcome-file>    <!-- JSP welcome page -->
+    </welcome-file-list>
+
+    <!-- ============================
+         Servlet: LoginServlet
+         Handles user login requests
+         ============================ -->
+    <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.loginapp.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+
+    <!-- ============================
+         Servlet: SignUpServlet
+         Handles user registration
+         ============================ -->
+   <servlet>
+    <servlet-name>SignUpServlet</servlet-name>
+    <servlet-class>com.loginapp.SignUpServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+</servlet-mapping>
+
+</web-app>

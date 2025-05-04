@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EMS Corp - Employee Management System</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+	rel="stylesheet" />
+<script
+	src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+	<!-- Navbar -->
+	<nav
+		class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 shadow-md sticky top-0 z-50">
+		<div
+			class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+			<!-- Brand -->
+			<h1 class="text-2xl font-bold text-white">EMS Corp</h1>
+
+			<!-- Hamburger (Mobile Only) -->
+			<button id="menu-btn"
+				class="md:hidden text-white text-3xl focus:outline-none">
+				&#9776;</button>
+
+			<!-- Menu Links -->
+			<div id="menu"
+				class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 absolute md:static top-[100%] left-0 w-full md:w-auto bg-indigo-700 md:bg-transparent p-4 md:p-0 z-40">
+				<a href="#home" class="text-white hover:text-indigo-200 block py-2">Home</a>
+				<a href="#features"
+					class="text-white hover:text-indigo-200 block py-2">Features</a> <a
+					href="#dashboard"
+					class="text-white hover:text-indigo-200 block py-2">Dashboard</a> <a
+					href="#team" class="text-white hover:text-indigo-200 block py-2">Team</a>
+				<a href="#testimonials"
+					class="text-white hover:text-indigo-200 block py-2">Testimonials</a>
+				<a href="#pricing"
+					class="text-white hover:text-indigo-200 block py-2">Pricing</a> <a
+					href="#contact" class="text-white hover:text-indigo-200 block py-2">Contact</a>
+
+				<!-- Mobile Buttons -->
+				<div class="flex flex-col space-y-2 mt-4 md:hidden">
+					<a href="login.jsp"
+						class="px-4 py-2 border border-white text-white rounded hover:bg-indigo-100 hover:text-indigo-700 text-center">Login</a>
+					<a href="signup.jsp"
+						class="px-4 py-2 bg-white text-indigo-600 rounded hover:bg-indigo-200 text-center">Sign
+						Up</a>
+				</div>
+			</div>
+
+			<!-- Desktop Buttons -->
+			<div class="hidden md:flex space-x-4">
+				<a href="login.jsp"
+					class="px-4 py-2 border border-white text-white rounded hover:bg-indigo-100 hover:text-indigo-700">Login</a>
+				<a href="signup.jsp"
+					class="px-4 py-2 bg-white text-indigo-600 rounded hover:bg-indigo-200">Sign
+					Up</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<section id="home"
+		class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white py-24 text-center">
+		<div class="max-w-6xl mx-auto px-4">
+			<h2 class="text-4xl font-bold mb-6">Welcome to EMS Corp</h2>
+			<p class="text-xl mb-8">An innovative solution for managing
+				employee data, attendance, payroll, and more!</p>
+			<button
+				class="px-6 py-3 bg-indigo-600 text-white text-lg rounded-lg hover:bg-indigo-700">Get
+				Started</button>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section id="features" class="py-16 bg-white">
+		<div class="max-w-6xl mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-10">Amazing Features</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div
+					class="bg-indigo-100 p-6 rounded shadow hover:shadow-xl transition">
+					<img src="images/feature-1.jpg" alt="Employee Management"
+						class="mb-4 mx-auto rounded">
+					<h3 class="text-xl font-semibold mb-2">Employee Management</h3>
+					<p>Manage employee records, attendance, and leave requests all
+						in one place.</p>
+				</div>
+				<div
+					class="bg-indigo-100 p-6 rounded shadow hover:shadow-xl transition">
+					<img src="images/feature-2.jpg" alt="Payroll Integration"
+						class="mb-4 mx-auto rounded">
+					<h3 class="text-xl font-semibold mb-2">Payroll Integration</h3>
+					<p>Efficiently calculate and manage payroll, tax deductions,
+						and bonuses.</p>
+				</div>
+				<div
+					class="bg-indigo-100 p-6 rounded shadow hover:shadow-xl transition">
+					<img src="images/feature-3.jpg" alt="Advanced Reports"
+						class="mb-4 mx-auto rounded">
+					<h3 class="text-xl font-semibold mb-2">Advanced Reports</h3>
+					<p>Generate insightful reports to make better business
+						decisions.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials -->
+	<section id="testimonials"
+		class="py-16 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+		<div class="max-w-6xl mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-10">What Our Clients Say</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div
+					class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-xl transition">
+					<p class="italic">"EMS Corp has revolutionized how we manage
+						employees. Highly recommended!"</p>
+					<h4 class="mt-4 font-semibold">— Priya Sharma, HR Head</h4>
+				</div>
+				<div
+					class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-xl transition">
+					<p class="italic">"The dashboard is intuitive and makes
+						reporting easy. Great product!"</p>
+					<h4 class="mt-4 font-semibold">— Raj Malhotra, Team Lead</h4>
+				</div>
+				<div
+					class="bg-white text-gray-800 p-6 rounded shadow hover:shadow-xl transition">
+					<p class="italic">"Attendance tracking and payroll are now
+						hassle-free. Thank you EMS!"</p>
+					<h4 class="mt-4 font-semibold">— Anjali Desai, Admin</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pricing -->
+	<section id="pricing" class="py-16 bg-gray-50">
+		<div class="max-w-6xl mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-10">Pricing Plans</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="bg-white border rounded p-6 shadow hover:shadow-xl">
+					<h3 class="text-xl font-bold mb-2">Starter</h3>
+					<p class="text-2xl font-semibold mb-4">Free</p>
+					<ul class="mb-4 space-y-2 text-sm text-left">
+						<li>✔ Basic Dashboard</li>
+						<li>✔ Employee Directory</li>
+						<li>✖ Advanced Reports</li>
+					</ul>
+					<button
+						class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Get
+						Started</button>
+				</div>
+				<div class="bg-white border rounded p-6 shadow hover:shadow-xl">
+					<h3 class="text-xl font-bold mb-2">Pro</h3>
+					<p class="text-2xl font-semibold mb-4">₹999/month</p>
+					<ul class="mb-4 space-y-2 text-sm text-left">
+						<li>✔ Full Dashboard</li>
+						<li>✔ Reports & Analytics</li>
+						<li>✔ Payroll Management</li>
+					</ul>
+					<button
+						class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Start
+						Free Trial</button>
+				</div>
+				<div class="bg-white border rounded p-6 shadow hover:shadow-xl">
+					<h3 class="text-xl font-bold mb-2">Enterprise</h3>
+					<p class="text-2xl font-semibold mb-4">Custom</p>
+					<ul class="mb-4 space-y-2 text-sm text-left">
+						<li>✔ Dedicated Support</li>
+						<li>✔ Unlimited Users</li>
+						<li>✔ Full Customization</li>
+					</ul>
+					<button
+						class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Contact
+						Us</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="py-16 bg-white">
+		<div class="max-w-6xl mx-auto px-4 text-center">
+			<h2 class="text-3xl font-bold mb-10">Contact Us</h2>
+			<form class="max-w-xl mx-auto space-y-4">
+				<input type="text" placeholder="Your Name"
+					class="w-full px-4 py-2 border rounded-md" required /> <input
+					type="email" placeholder="Your Email"
+					class="w-full px-4 py-2 border rounded-md" required />
+				<textarea placeholder="Your Message"
+					class="w-full px-4 py-2 border rounded-md" rows="4" required></textarea>
+				<button type="submit"
+					class="w-full px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Send
+					Message</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-8">
+		<div class="max-w-6xl mx-auto px-4 text-center">
+			<p>&copy; 2025 EMS Corp. All rights reserved.</p>
+		</div>
+	</footer>
+	<!-- JS for Toggle -->
+	<!-- JavaScript for Toggle -->
+	<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>
