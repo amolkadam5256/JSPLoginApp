@@ -5,11 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBUtil {
-
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/loginapp"; // Replace with your actual DB URL
-    private static final String DB_USERNAME = "root"; // Replace with your DB username
-    private static final String DB_PASSWORD = "amolkadam7709"; // Replace with your DB password
-    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver"; // For MySQL 8.0+
+	private static final String DB_URL = "jdbc:mysql://db4free.net:3306/loginappdb?useSSL=false&serverTimezone=UTC";
+	private static final String DB_USERNAME = "amolkadam";
+	private static final String DB_PASSWORD = "amol1234";
+	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection getConnection() throws SQLException {
         try {
